@@ -1,0 +1,130 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/**
+* sologan .h1
+*/
+.sologan__heading {
+  font-size: var(--fonts80);
+  font-family: Imperial Script, Montserrat, Nunito, sans-serif, Arial, Helvetica;
+  word-spacing: 10px;
+  font-weight: normal;
+}
+
+/**
+* scrolling bar .div
+*/
+.scrollBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border-top: var(--bd);
+  border-bottom: var(--bd);
+}
+
+.scrollingBtns {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+}
+
+.scrollingBtn {
+  background: var(--bg-darkgreen);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+/**
+* drinks menu display .section
+*/
+.drinksMenu {
+  width: 100%;
+  overflow: hidden;
+}
+
+.drinksContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.drinksContainer .drinksSlide {
+  width: fit-content;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/*a drink .div*/
+.drink {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  margin-top: 100px;
+  width: 250px;
+  padding: 10px;
+  padding-top: 110px;
+  background: var(--bg-lightgreen);
+  box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.1);
+  border-radius: var(--bdr);
+}
+
+.drinkImage {
+  position: absolute;
+  top: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: var(--bdr);
+}
+
+.drinkImage .drink__img {
+  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.2));
+}
+
+.drinkImage:hover .drink__img {
+  transform: scale(1.2);
+  cursor: grab;
+  filter: drop-shadow(20px 20px 10px rgba(0,0,0,0.5));
+}
+
+/*h3*/
+.drink__name {
+  width: 100%;
+  font-size: var(--fonts24);
+  font-weight: var(--fontw-semibold);
+  max-height: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.drinkRating {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--fonts12);
+}
+
+/*h4*/
+.drink__price {
+  width: 100%;
+  font-weight: var(--fontw-medium);
+}
+
+.addBtn {
+  width: 100%;
+  height: 40px;
+  background: var(--bg-darkgreen);
+  border-radius: var(--bdr);
+}

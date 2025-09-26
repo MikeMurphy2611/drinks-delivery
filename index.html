@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="a website streaming movie"/>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+  <link rel="icon" type="image" href="./images/logo.jpg"/>
+  <title>Drinks Delivery</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="headerNav">
+      <img class="logo__img" src="./images/logo1.jpg" alt="logo"/>
+      <button class="navBtn">Cocktail</button>
+      <button class="navBtn">Juice</button>
+      <button class="navBtn">Menu</button>
+    </nav>
+
+    <div class="headerFeatures">
+      <form class="searchForm">
+        <input class="search__input" type="search" placeholder="Search"/>
+        <button class="searchBtn">
+          <img class="icon search__img" src="./images/icons/search.png" alt="search"/>
+        </button>
+      </form>
+
+      <button class="featureBtn cartBtn">
+        <div class="cart__quantity">02</div>
+        <img class="icon cart__img" src="./images/icons/cart.png" alt="cart"/>
+      </button>
+      <button class="featureBtn accountBtn">
+        <img class="icon user__img" src="./images/icons/user.png" alt="account"/>
+      </button>
+      <button class="featureBtn menuBtn">
+        <img class="icon menu__img" src="./images/icons/menu.png" alt="menu"/>
+      </button>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <button class="cancelBtn">
+      <img class="icon cancel__img" src="./images/icons/cancel.png" alt="cancel"/>
+    </button>
+    <h2 class="cart__heading">Your cart</h2>
+    <div class="itemsContainer">
+      <div class="cartItems">
+        <div class="cartItem">
+          <img class="item__img" src="./images/drinks/coca-cola.png" alt="image"/>
+          <div class="itemInfor">
+            <h3 class="item__name">Coca Cola</h3>
+            <h4 class="item__price">$39</h4>
+            <div class="itemModify">
+              <select class="selectQuantity">
+                <option class="quantity__option">1</option>
+                <option class="quantity__option">2</option>
+                <option class="quantity__option">3</option>
+              </select>
+              <button class="deleteBtn">
+                DELETE 
+                <img class="icon bin__img" src="./images/icons/bin.png" alt="delete"/>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="cartItem">
+          <img class="item__img" src="./images/drinks/honey-lemon-ginger-juice.png" alt="image"/>
+          <div class="itemInfor">
+            <h3 class="item__name">Honey Lemon Ginger Juice</h3>
+            <h4 class="item__price">$39</h4>
+            <div class="itemModify">
+              <select class="selectQuantity">
+                <option class="quantity__option">1</option>
+                <option class="quantity__option">2</option>
+                <option class="quantity__option">3</option>
+              </select>
+              <button class="deleteBtn">
+                DELETE 
+                <img class="icon bin__img" src="./images/icons/bin.png" alt="delete"/>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cartItem">
+          <img class="item__img" src="./images/drinks/fruit-ice-tea.png" alt="image"/>
+          <div class="itemInfor">
+            <h3 class="item__name">Fruit Ice Tea</h3>
+            <h4 class="item__price">$39</h4>
+            <div class="itemModify">
+              <select class="selectQuantity">
+                <option class="quantity__option">1</option>
+                <option class="quantity__option">2</option>
+                <option class="quantity__option">3</option>
+              </select>
+              <button class="deleteBtn">
+                DELETE 
+                <img class="icon bin__img" src="./images/icons/bin.png" alt="delete"/>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="checkoutBox">
+      <h3 class="checkout__heading">Order Summary</h3>
+      <div class="checkoutDetails">
+        <div class="checkoutValues subtotal">
+          <span class="checkout__term">Sub total</span>
+          <span class="checkout__price">$117</span>
+        </div>
+        <div class="checkoutValues discount">
+          <span class="checkout__term">Discount (10%)</span>
+          <span class="checkout__price">$11.7</span>
+        </div>
+        <div class="checkoutValues subtotal">
+          <span class="checkout__term">Final total</span>
+          <span class="checkout__price">$105.3</span>
+        </div>
+      </div>
+      <button class="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="sologan__heading">
+      Savor Life's Flavor
+    </h1>
+
+    <div class="scrollBar">
+      <div class="scrollingBtns">
+        <button class="scrollingBtn">
+          <img class="icon arrow__img" src="./images/icons/left-arrow.png" alt="scroll left"/>
+        </button>
+        <button class="scrollingBtn">
+          <img class="icon arrow__img" src="./images/icons/right-arrow.png" alt="scroll right"/>
+        </button>
+      </div>
+    </div>
+
+    <section class="drinksMenu">
+      <div class="drinksContainer">
+        <div class="drinksSlide">
+          <div class="drink">
+            <div class="drinkImage">
+              <img class="drink__img" src="./images/drinks/coca-cola.png" alt="image"/>
+            </div>
+            <h3 class="drink__name">Coca Cola</h3>
+            <div class="drinkRating">
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/empty-star.png" alt="star"/>
+              20
+            </div>
+            <h4 class="drink__price">$39</h4>
+            <button class="addBtn">ADD TO CART</button>
+          </div>
+
+          <div class="drink">
+            <div class="drinkImage">
+              <img class="drink__img" src="./images/drinks/fruit-ice-tea.png" alt="image"/>
+            </div>
+              <h3 class="drink__name">Fruit Ice Tea</h3>
+            <div class="drinkRating">
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/empty-star.png" alt="star"/>
+              20
+            </div>
+            <h4 class="drink__price">$39</h4>
+            <button class="addBtn">ADD TO CART</button>
+          </div>
+
+          <div class="drink">
+            <div class="drinkImage">
+              <img class="drink__img" src="./images/drinks/honey-lemon-ginger-juice.png" alt="image"/>
+            </div>
+              <h3 class="drink__name">Honey Lemon Ginger Juice</h3>
+            <div class="drinkRating">
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/empty-star.png" alt="star"/>
+              20
+            </div>
+            <h4 class="drink__price">$39</h4>
+            <button class="addBtn">ADD TO CART</button>
+          </div>
+
+          <div class="drink">
+            <div class="drinkImage">
+              <img class="drink__img" src="./images/drinks/orange-strawberry-cocktail.png" alt="image"/>
+            </div>
+              <h3 class="drink__name">Orange Strawberry Cocktail</h3>
+            <div class="drinkRating">
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/empty-star.png" alt="star"/>
+              20
+            </div>
+            <h4 class="drink__price">$39</h4>
+            <button class="addBtn">ADD TO CART</button>
+          </div>
+
+          <div class="drink">
+            <div class="drinkImage">
+              <img class="drink__img" src="./images/drinks/sweet-drink-tamarind-juice.png" alt="image"/>
+            </div>
+              <h3 class="drink__name">Sweet Drink Tamarine Juice</h3>
+            <div class="drinkRating">
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/empty-star.png" alt="star"/>
+              20
+            </div>
+            <h4 class="drink__price">$39</h4>
+            <button class="addBtn">ADD TO CART</button>
+          </div>
+
+          <div class="drink">
+            <div class="drinkImage">
+              <img class="drink__img" src="./images/drinks/traditional-majito-with-ice-mint.png" alt="image"/>
+            </div>
+              <h3 class="drink__name">Traditional Majito With Ice Mint</h3>
+            <div class="drinkRating">
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/empty-star.png" alt="star"/>
+              20
+            </div>
+            <h4 class="drink__price">$39</h4>
+            <button class="addBtn">ADD TO CART</button>
+          </div>
+
+          <div class="drink">
+            <div class="drinkImage">
+              <img class="drink__img" src="./images/drinks/summer-ice.png" alt="image"/>
+            </div>
+              <h3 class="drink__name">Summer Ice</h3>
+            <div class="drinkRating">
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/filled-star.png" alt="star"/>
+              <img class="small__icon star__img" src="./images/icons/empty-star.png" alt="star"/>
+              20
+            </div>
+            <h4 class="drink__price">$39</h4>
+            <button class="addBtn">ADD TO CART</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footerLinks">
+        <a class="footerLink">Features</a>
+        <a class="footerLink">Plans & Pricing</a>
+        <a class="footerLink">News & Blogs</a>
+        <a class="footerLink">Careers</a>
+        <a class="footerLink">About Us</a>
+        <a class="footerLink">Terms</a>
+        <a class="footerLink">Privacy</a>
+        <a class="footerLink">Cookies</a>
+      </div>
+      <div class="footerFeatures">
+        Copyright 
+        <img class="small__icon copyright__img" src="./images/icons/copyright.png" alt="copyright"/>
+        All rights reserved
+      </div>
+    </footer>
+  </main>
+
+  <script src="./js/javascript.js"></script>
+</body>
+</html>
